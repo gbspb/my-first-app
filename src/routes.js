@@ -5,7 +5,7 @@ import PlanetScreen from "./screens/planet";
 import NotFoundScreen from "./screens/notFound";
 
 const Rotas = () => (
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter>
     <Routes>
       <Route path='/' element={<PlanetsScreen />} />
       <Route path='/planet/:id' element={<PlanetScreen />} />
